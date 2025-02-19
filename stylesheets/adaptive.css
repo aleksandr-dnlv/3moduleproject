@@ -1,0 +1,35 @@
+@media screen and (max-device-width:768px) {
+    .map-title{
+        font-size: 3vw;
+    }
+    .controls{
+        flex-direction: column;
+        margin-left: 18vw;
+    }
+    .slider-container label{
+        font-size: 3.2vw;
+        display: flex;
+    }
+    .slider-container {
+        width: 15vw;
+        margin-top: 7vw;
+        text-align: center;
+    }
+    input[type="range"]{
+        margin-top: 3vw;
+        border-radius:2px;
+        width: 66vw;
+        height: 2vw;
+      }
+      input[type="range"]::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        width: 3vw;
+        height: 3vw;
+        border-radius:15%;
+      }
+      .logo_item img{
+        width: 50vw;
+        height: 50vw;
+        margin-left: 2vw;
+      }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable-no"
+    />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="icon" href="images/Favicon.svg" />
+    <title>Штрих Леса</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img src="images/headerleft.png" alt="WtrixLeft" class="wtrix-left" />
+        <img
+          src="images/Slider.png"
+          alt="Slider"
+          class="wtrix-slider"
+          id="wtrix-slider"
+        />
+        <img
+          src="images/headerright.png"
+          alt="WtrixRight"
+          class="wtrix-right"
+        />
+      </div>
+    </div>
+    <div class="map-title">
+      <p id="trigger-event">КАРТА МЕРОПРИЯТИЯ</p>
+      <p id="trigger-map">КАЛИГРАФИЯ ЛЕСА</p>
+    </div>
+    <div class="map">
+      <img
+        class="map-event"
+        src="images/MapEvent.png"
+        alt="верхнее изображение"
+      />
+      <img
+        class="hover-image"
+        src="images/MapEventHover.png"
+        alt="Изображение при наведении"
+      />
+      <img id="map" src="images/Map.png" alt="Карта" />
+    </div>
+
+    <div class="controls">
+      <div class="slider-container">
+        <label for="invert">Инверсия</label>
+        <input type="range" id="invert" min="0" max="100" value="0" />
+      </div>
+      <div class="slider-container">
+        <label for="grayscale">Ч\Б</label>
+        <input type="range" id="grayscale" min="0" max="100" value="100" />
+      </div>
+      <div class="slider-container">
+        <label for="contrast">Контраст</label>
+        <input type="range" id="contrast" min="100" max="200" value="200" />
+      </div>
+    </div>
+    <div class="element-title">
+      <h3>объедини стихии</h3>
+    </div>
+    <div class="element">
+      <div class="grid-container">
+        <div class="logo_item">
+          <img src="images/logoitem.png" id="main-image" />
+        </div>
+        <div class="logo_items">
+          <img src="images/logoelements.png" id="trigger-image" />
+        </div>
+      </div>
+    </div>
+    <div class="majong-title">
+      <h3>Мастер класс Маджонг</h3>
+    </div>
+    <div class="majong">
+      <div class="majong-icons">
+        <div class="majong-icons-line-1">
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+        </div>
+        <div class="majong-icons-line-2">
+          <img draggable="true" src="images/icon-bird.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon-bober.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+        </div>
+        <div class="majong-icons-line-3">
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+        </div>
+        <div class="majong-icons-line-4">
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+        </div>
+        <div class="majong-icons-line-5">
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+          <img draggable="true" src="images/icon.png" />
+        </div>
+      </div>
+    </div>
+    <div class="canvas-title">
+      <h3>Мастер класс калиграфии</h3>
+    </div>
+    <div class="canvas-container">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="canvas-styles">
+      <div class="style">
+        <img src="images/6.png" class="canvas-style" data-style="aist" />
+        <p class="style-text">
+          Стиль <br />
+          Аиста
+        </p>
+      </div>
+      <div class="style">
+        <img src="images/5.png" class="canvas-style" data-style="bear" />
+        <p class="style-text">
+          Стиль <br />
+          Медведя
+        </p>
+      </div>
+      <div class="style">
+        <img src="images/7.png" class="canvas-style" data-style="bober" />
+        <p class="style-text">
+          Стиль <br />
+          Бобра
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-columns">
+        <img src="images/LOGO.svg" alt="logo" class="logo" />
+        <h2>
+          Данилов<br />
+          Александр
+        </h2>
+      </div>
+    </div>
+    <script src="javascripts/scrollbar.js"></script>
+    <script src="javascripts/header.js"></script>
+    <script src="javascripts/map-controls.js"></script>
+    <script src="javascripts/map-event.js"></script>
+    <script src="javascripts/elements.js"></script>
+    <script src="javascripts/majong.js"></script>
+    <script src="javascripts/paper.js"></script>
+  </body>
+</html>

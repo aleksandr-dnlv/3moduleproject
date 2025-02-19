@@ -1,0 +1,16 @@
+@font-face {
+    src: url("../fonts/Rodchenko/Rodchenko.ttf") format("truetype"); 
+    font-family: "Rodchenko";
+} 
+@font-face {
+    src: url("../fonts/Rodchenko/Rodchenkocondc.otf") format("truetype"); 
+    font-family: "RodchenkoCond";
+} 
+@font-face {
+    src: url("../fonts/Aeroport/Aeroport.ttf") format("truetype"); 
+    font-family: "Aeroport";
+}
+@font-face {
+    src: url("../fonts/Aeroport/Aeroport-Bold.ttf") format("truetype"); 
+    font-family: "AeroportBold";
+} 
